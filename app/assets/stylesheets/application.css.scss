@@ -1,0 +1,90 @@
+/*
+*= require_self
+*= require_tree .
+*/
+
+$body_bg: #4B7399;
+$a: #0000FF;
+$container_bg: #FFF;
+$flash_notice_bg: #CFC;
+$flash_notice_br: #6C6;
+$flash_al_er: #FCC;
+$flash_al_er_br: #C66;
+
+body {
+	background-color: $body_bg;
+	font-family: Verdana, Helvetica, Arial;
+	font-size: 14px;
+	a {
+		color: $a;
+		img {
+			border: none;
+		}
+	}
+	
+	#container {
+		width: 75%;
+		margin: 0 auto;
+		background-color: $container_bg;
+		padding: 20px 40px;
+		border: solid 1px black;
+		margin-top: 20px;
+		#flash_notice, #flash_error, #flash_alert {
+			padding: 5px 8px;
+			margin: 10px 0;
+		}
+
+		#flash_notice {
+			background-color: $flash_notice_bg;
+			border: solid 1px $flash_notice_br;
+		}
+
+		#flash_error, #flash_alert {
+			background-color: $flash_al_er;
+			border: solid 1px $flash_al_er_br;
+		}
+	}
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+.fieldWithErrors {
+	display: inline;
+}
+
+.error_messages {
+	width: 400px;
+	border: 2px solid #CF0000;
+	padding: 0px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+	font-size: 12px;
+	h2 {
+		text-align: left;
+		font-weight: bold;
+		padding: 5px 10px;
+		font-size: 12px;
+		margin: 0;
+		background-color: #c00;
+		color: #fff;
+	}
+	p {
+		margin: 8px 10px;
+	}
+	ul {
+		margin: 0;
+	}
+}
+
+.main_menu {
+	border: solid 1px black;
+}
+
+.advert {
+	border: solid 1px black;
+}
