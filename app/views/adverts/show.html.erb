@@ -1,0 +1,48 @@
+<% title "Advert" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @advert.title %>
+</p>
+<p>
+  <strong>Description:</strong>
+  <%= @advert.description %>
+</p>
+<p>
+  <strong>Main Image:</strong>
+  <%= @advert.main_image_id %>
+</p>
+<p>
+  <strong>User:</strong>
+  <%= @advert.user_id %>
+</p>
+<p>
+  <strong>Category:</strong>
+  <%= @advert.category_id %>
+</p>
+<p>
+  <strong>Province:</strong>
+  <%= @advert.province_id %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @advert.city %>
+</p>
+<p>
+  <strong>Contact Phone:</strong>
+  <%= @advert.contact_phone %>
+</p>
+<p>
+  <strong>Contact Web:</strong>
+  <%= @advert.contact_web %>
+</p>
+<p>
+  <strong>Contact Email:</strong>
+  <%= @advert.contact_email %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_advert_path(@advert) %> |
+  <%= link_to "Destroy", @advert, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", adverts_path %>
+</p>

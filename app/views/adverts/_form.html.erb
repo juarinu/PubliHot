@@ -1,0 +1,44 @@
+<%= form_for @advert do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </p>
+  <p>
+    <%= f.label :main_image_id %><br />
+    <%= f.number_field :main_image_id %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.number_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :category_id %><br />
+    <%= f.number_field :category_id %>
+  </p>
+  <p>
+    <%= f.label :province_id %><br />
+    <%= f.number_field :province_id %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :contact_phone %><br />
+    <%= f.text_field :contact_phone %>
+  </p>
+  <p>
+    <%= f.label :contact_web %><br />
+    <%= f.text_field :contact_web %>
+  </p>
+  <p>
+    <%= f.label :contact_email %><br />
+    <%= f.text_field :contact_email %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
