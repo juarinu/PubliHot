@@ -9,16 +9,23 @@
   </head>
   <body>
     <div id="container">
-			<div id="ph_banner"><%= image_tag "publihot.jpg" %></div>
-      <% flash.each do |name, msg| %>
-        <%= content_tag :div, msg, :id => "flash_#{name}" %>
-      <% end %>
-			<ul class="main_menu">
-				<li>Provincia</li>
-				<li>Categoría</li>
-			</ul>
-      <%= content_tag :h1, yield(:title) if show_title? %>
-      <%= yield %>
+			<div id="ph_header">
+				<%= image_tag "publihot.jpg" %>
+				<div class="register">Registro</div>
+			</div>
+			
+			<div id="ph_body">
+				<% flash.each do |name, msg| %>
+	        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+	      <% end %>
+				<%= content_tag :h1, yield(:title) if show_title? %>
+	      <%= yield %>
+			</div>
+
+			<div id="ph_footer">
+				@ 2012. El equipo plumilla
+			</div>
+			
     </div>
   </body>
 </html>

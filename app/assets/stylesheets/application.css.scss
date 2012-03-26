@@ -3,7 +3,7 @@
 *= require_tree .
 */
 
-$body_bg: #4B7399;
+$body_bg: #E3E3E3;
 $a: #0000FF;
 $container_bg: #FFF;
 $flash_notice_bg: #CFC;
@@ -23,12 +23,13 @@ body {
 	}
 	
 	#container {
-		width: 75%;
+		width: 920px;
 		margin: 0 auto;
 		background-color: $container_bg;
 		padding: 20px 40px;
 		border: solid 1px black;
 		margin-top: 20px;
+		
 		#flash_notice, #flash_error, #flash_alert {
 			padding: 5px 8px;
 			margin: 10px 0;
@@ -43,7 +44,33 @@ body {
 			background-color: $flash_al_er;
 			border: solid 1px $flash_al_er_br;
 		}
+		
+		#ph_header {
+			border: solid 2px blue;
+			text-align: center;
+			img {
+				border: solid 1px blue;
+			}
+		}
+		
+		#ph_body {
+			border: solid 2px green;
+			
+			.advert {
+				border: solid 1px green;
+			}
+		}
+		
+		
+		#ph_footer {
+			border: solid 2px red;
+			text-align: center;
+			font-family: "Sans-serif";
+			font-size: 10px;
+		}
 	}
+	
+	
 }
 
 .clear {
@@ -81,10 +108,3 @@ body {
 	}
 }
 
-.main_menu {
-	border: solid 1px black;
-}
-
-.advert {
-	border: solid 1px black;
-}
