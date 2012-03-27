@@ -1,5 +1,24 @@
+$left_width: 150px;
+$right_width: 150px;
+
 #ph_body {
 	border: solid 2px green;
+	
+	#body_left {
+		border: solid 1px #666;
+		width: $left_width;
+		float: left;
+	}
+	#body_right {
+		border: solid 1px #666;
+		width: $right_width;
+		float: right;
+	}
+	#body_center {
+		margin: 0 $right_width 0 $left_width;
+		padding: 10px;
+		padding-top: 0;
+	}
 	
 	.advert {
 		border: solid 1px green;

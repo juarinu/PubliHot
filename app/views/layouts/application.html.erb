@@ -13,19 +13,24 @@
 				<%= image_tag "publihot.jpg" %>
 				<div class="register">Registro</div>
 			</div>
-			
 			<div id="ph_body">
 				<% flash.each do |name, msg| %>
 	        <%= content_tag :div, msg, :id => "flash_#{name}" %>
 	      <% end %>
-				<%= content_tag :h1, yield(:title) if show_title? %>
-	      <%= yield %>
+	      <div id="body_left">
+	        Panel de la izquierda
+	      </div>
+	      <div id="body_right">
+				  Panel de la derecha
+				</div>
+	      <div id="body_center">
+	        <%= content_tag :h1, yield(:title) if show_title? %>
+  	      <%= yield %>
+	      </div>
 			</div>
-
 			<div id="ph_footer">
 				@ 2012. El equipo plumilla
 			</div>
-			
     </div>
   </body>
 </html>
