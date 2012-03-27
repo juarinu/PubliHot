@@ -1,0 +1,27 @@
+@import "ph_body";
+
+$container_bg: #FFF;
+
+#container {
+	width: 920px;
+	margin: 0 auto;
+	background-color: $container_bg;
+	padding: 20px 40px;
+	border: solid 1px black;
+	margin-top: 20px;
+	
+	#ph_header {
+		border: solid 2px blue;
+		text-align: center;
+		img {
+			border: solid 1px blue;
+		}
+	}
+	
+	#ph_footer {
+		border: solid 2px red;
+		text-align: center;
+		font-family: "Sans-serif";
+		font-size: 10px;
+	}
+}

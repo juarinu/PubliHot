@@ -1,11 +1,7 @@
-/*
-*= require_self
-*= require_tree .
-*/
+@import "container";
 
 $body_bg: #E3E3E3;
 $a: #0000FF;
-$container_bg: #FFF;
 $flash_notice_bg: #CFC;
 $flash_notice_br: #6C6;
 $flash_al_er: #FCC;
@@ -20,57 +16,22 @@ body {
 		img {
 			border: none;
 		}
-	}
-	
-	#container {
-		width: 920px;
-		margin: 0 auto;
-		background-color: $container_bg;
-		padding: 20px 40px;
-		border: solid 1px black;
-		margin-top: 20px;
-		
-		#flash_notice, #flash_error, #flash_alert {
-			padding: 5px 8px;
-			margin: 10px 0;
-		}
+	}	
+}
 
-		#flash_notice {
-			background-color: $flash_notice_bg;
-			border: solid 1px $flash_notice_br;
-		}
+#flash_notice, #flash_error, #flash_alert {
+	padding: 5px 8px;
+	margin: 10px 0;
+}
 
-		#flash_error, #flash_alert {
-			background-color: $flash_al_er;
-			border: solid 1px $flash_al_er_br;
-		}
-		
-		#ph_header {
-			border: solid 2px blue;
-			text-align: center;
-			img {
-				border: solid 1px blue;
-			}
-		}
-		
-		#ph_body {
-			border: solid 2px green;
-			
-			.advert {
-				border: solid 1px green;
-			}
-		}
-		
-		
-		#ph_footer {
-			border: solid 2px red;
-			text-align: center;
-			font-family: "Sans-serif";
-			font-size: 10px;
-		}
-	}
-	
-	
+#flash_notice {
+	background-color: $flash_notice_bg;
+	border: solid 1px $flash_notice_br;
+}
+
+#flash_error, #flash_alert {
+	background-color: $flash_al_er;
+	border: solid 1px $flash_al_er_br;
 }
 
 .clear {
@@ -107,4 +68,3 @@ body {
 		margin: 0;
 	}
 }
-
