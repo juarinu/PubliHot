@@ -1,22 +1,30 @@
-@import "ph_body";
-
+$container_width: 950px;
 $container_bg: #FFF;
+$register_width: 250px;
+$rotulo_width: $container_width - $register_width - 10;
+$header_height: 80px;
 
 #container {
-	width: 920px;
-	margin: 0 auto;
+	width: $container_width;
+	margin: 20px auto;
 	background-color: $container_bg;
-	padding: 20px 40px;
 	border: solid 1px black;
-	margin-top: 20px;
 	
 	#ph_header {
-		border: solid 2px blue;
-		text-align: center;
-		img {
+		img {;
+			width: $rotulo_width;
 			border: solid 1px blue;
 		}
+		#header_register {
+			float: right;
+			width: $register_width;
+			text-align: right;
+			border: 1px solid blue;
+		}
+		border: solid 2px blue;
 	}
+	
+	@import "ph_body";
 	
 	#ph_footer {
 		border: solid 2px red;

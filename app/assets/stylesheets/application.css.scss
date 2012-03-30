@@ -1,5 +1,3 @@
-@import "container";
-
 $body_bg: #E3E3E3;
 $a: #0000FF;
 $flash_notice_bg: #CFC;
@@ -16,7 +14,9 @@ body {
 		img {
 			border: none;
 		}
-	}	
+	}
+	
+	@import "container";
 }
 
 #flash_notice, #flash_error, #flash_alert {
