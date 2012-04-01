@@ -1,9 +1,12 @@
-$body_bg: #E3E3E3;
+@import 'bourbon';
+
+$body_bg: #FFF;
 $a: #0000FF;
-$flash_notice_bg: #CFC;
-$flash_notice_br: #6C6;
-$flash_al_er: #FCC;
-$flash_al_er_br: #C66;
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
 
 body {
 	background-color: $body_bg;
@@ -19,52 +22,4 @@ body {
 	@import "container";
 }
 
-#flash_notice, #flash_error, #flash_alert {
-	padding: 5px 8px;
-	margin: 10px 0;
-}
-
-#flash_notice {
-	background-color: $flash_notice_bg;
-	border: solid 1px $flash_notice_br;
-}
-
-#flash_error, #flash_alert {
-	background-color: $flash_al_er;
-	border: solid 1px $flash_al_er_br;
-}
-
-.clear {
-	clear: both;
-	height: 0;
-	overflow: hidden;
-}
-
-.fieldWithErrors {
-	display: inline;
-}
-
-.error_messages {
-	width: 400px;
-	border: 2px solid #CF0000;
-	padding: 0px;
-	padding-bottom: 12px;
-	margin-bottom: 20px;
-	background-color: #f0f0f0;
-	font-size: 12px;
-	h2 {
-		text-align: left;
-		font-weight: bold;
-		padding: 5px 10px;
-		font-size: 12px;
-		margin: 0;
-		background-color: #c00;
-		color: #fff;
-	}
-	p {
-		margin: 8px 10px;
-	}
-	ul {
-		margin: 0;
-	}
-}
+@import 'flash_error'

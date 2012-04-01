@@ -1,35 +1,62 @@
 $container_width: 950px;
 $container_bg: #FFF;
-$register_width: 250px;
+$register_width: 200px;
 $rotulo_width: $container_width - $register_width - 10;
 $header_height: 80px;
+$footer_first_color: #FBF460;
+$footer_final_color: #C8C14B;
 
 #container {
 	width: $container_width;
-	margin: 20px auto;
+	height: 100%;
+	margin: 0 auto;
 	background-color: $container_bg;
-	border: solid 1px black;
 	
 	#ph_header {
-		img {;
+		height: $header_height;
+		@include linear-gradient(#777, #444);
+		@include box-shadow(0 10px 6px -6px #000);
+		@include border-bottom-radius(5px);
+		color: white;
+		
+		img {
 			width: $rotulo_width;
 			border: solid 1px blue;
 		}
+		
+		p {
+			margin: 0px;
+			text-align: center;
+			font-family: $helvetica;
+			font-size: 400%;
+			font-weight: bold;
+		}
+		
 		#header_register {
 			float: right;
 			width: $register_width;
+			height: $header_height;
+			@include linear-gradient(#ED97E1, #C980BF);
+			@include border-bottom-right-radius(5px);
 			text-align: right;
-			border: 1px solid blue;
 		}
-		border: solid 2px blue;
 	}
 	
 	@import "ph_body";
 	
 	#ph_footer {
-		border: solid 2px red;
-		text-align: center;
-		font-family: "Sans-serif";
-		font-size: 10px;
+		position: absolute;
+		bottom: 0px;
+		width: $container_width;
+		height: 30px;
+		@include linear-gradient($footer_first_color, $footer_final_color);
+		@include box-shadow(0 -10px 6px -6px #000);
+		@include border-top-radius(5px);
+		
+		p {
+			text-align: center;
+			font-family: "Sans-serif";
+			font-size: 10px;
+		}
 	}
 }

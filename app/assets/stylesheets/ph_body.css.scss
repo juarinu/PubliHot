@@ -3,18 +3,19 @@ $right_width: 150px;
 $advert_width: ($container_width - $left_width - $right_width - 40) / 2;
 
 #ph_body {
-	border: solid 2px green;
 	
 	#body_left {
-		border: solid 1px #666;
 		width: $left_width;
 		float: left;
-	}
-	#body_right {
 		border: solid 1px #666;
+	}
+	
+	#body_right {
 		width: $right_width;
 		float: right;
+		border: solid 1px #666;
 	}
+	
 	#body_center {
 		margin: 0 $right_width 0 $left_width;
 		padding: 10px;
