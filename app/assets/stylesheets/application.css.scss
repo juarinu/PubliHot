@@ -5,21 +5,18 @@ $a: #0000FF;
 
 html, body {
 	margin: 0;
-	height: 100%;
 	font-family: $helvetica;
 	font-size: 12px;
 }
 
 body {
 	background-color: $body_bg;
-	
 	a {
 		color: $a;
 		img {
 			border: none;
 		}
 	}
-	
 	@import "container";
 }
 

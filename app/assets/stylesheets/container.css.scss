@@ -1,4 +1,4 @@
-$container_width: 950px;
+$container_width: 1000px;
 $container_bg: $body_bg;
 $register_width: 200px;
 $register_color: #D20F16;
@@ -53,7 +53,6 @@ $box_shadow_color: #444;
 	@import "ph_body";
 	
 	#ph_footer {
-		position: absolute;
 		bottom: 0px;
 		width: $container_width;
 		height: 30px;
