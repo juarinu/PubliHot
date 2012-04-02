@@ -1,6 +1,6 @@
 $left_width: 150px;
 $right_width: 150px;
-$advert_width: ($container_width - $left_width - $right_width - 40) / 2;
+$advert_width: ($container_width - $left_width - $right_width - 80) / 2;
 
 #ph_body {
 	
@@ -25,8 +25,12 @@ $advert_width: ($container_width - $left_width - $right_width - 40) / 2;
 		
 		.advert {
 			display: inline-block;
-			border: solid 1px green;
 			width: $advert_width;
+			height: 150px;
+			background:#fefabc;
+			margin: 5px;
+			padding:5px;
+			@include box-shadow(2px 2px 2px 2px #555);
 		}
 	}
 }
