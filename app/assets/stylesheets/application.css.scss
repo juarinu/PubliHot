@@ -1,17 +1,18 @@
 @import 'bourbon';
 
-$body_bg: #FFF;
+$body_bg: #F1F1F1;
 $a: #0000FF;
 
 html, body {
 	margin: 0;
 	height: 100%;
+	font-family: $helvetica;
+	font-size: 12px;
 }
 
 body {
 	background-color: $body_bg;
-	font-family: Verdana, Helvetica, Arial;
-	font-size: 14px;
+	
 	a {
 		color: $a;
 		img {

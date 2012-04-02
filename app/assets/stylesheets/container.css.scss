@@ -1,10 +1,11 @@
 $container_width: 950px;
-$container_bg: #FFF;
+$container_bg: $body_bg;
 $register_width: 200px;
+$register_color: #D20F16;
 $rotulo_width: $container_width - $register_width - 10;
 $header_height: 80px;
-$footer_first_color: #FBF460;
-$footer_final_color: #C8C14B;
+$footer_color: #D20F16;
+$box_shadow_color: #444;
 
 #container {
 	width: $container_width;
@@ -14,9 +15,9 @@ $footer_final_color: #C8C14B;
 	
 	#ph_header {
 		height: $header_height;
-		@include linear-gradient(#777, #444);
-		@include box-shadow(0 10px 6px -6px #000);
+		@include box-shadow(0 10px 6px -6px $box_shadow_color);
 		@include border-bottom-radius(5px);
+		@include background-image(url("flames.png"));
 		color: white;
 		
 		img {
@@ -28,15 +29,17 @@ $footer_final_color: #C8C14B;
 			margin: 0px;
 			text-align: center;
 			font-family: $helvetica;
-			font-size: 400%;
+			font-size: 500%;
 			font-weight: bold;
+			font-variant: small-caps;
+			letter-spacing: 40px;
 		}
 		
 		#header_register {
 			float: right;
 			width: $register_width;
 			height: $header_height;
-			@include linear-gradient(#ED97E1, #C980BF);
+			@include linear-gradient($register_color, darken($register_color, 30%));
 			@include border-bottom-right-radius(5px);
 			text-align: right;
 		}
@@ -49,9 +52,10 @@ $footer_final_color: #C8C14B;
 		bottom: 0px;
 		width: $container_width;
 		height: 30px;
-		@include linear-gradient($footer_first_color, $footer_final_color);
-		@include box-shadow(0 -10px 6px -6px #000);
+		@include linear-gradient($footer_color, darken($footer_color, 30%));
+		@include box-shadow(0 -10px 6px -6px $box_shadow_color);
 		@include border-top-radius(5px);
+		color: white;
 		
 		p {
 			text-align: center;
