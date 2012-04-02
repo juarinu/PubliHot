@@ -36,12 +36,17 @@ $box_shadow_color: #444;
 		}
 		
 		#header_register {
+			font-size: 10px;
 			float: right;
 			width: $register_width;
 			height: $header_height;
 			@include linear-gradient($register_color, darken($register_color, 30%));
 			@include border-bottom-right-radius(5px);
 			text-align: right;
+			.button {
+				@include button(simple, #CA8799);
+				text-decoration: none;
+			}
 		}
 	}
 	

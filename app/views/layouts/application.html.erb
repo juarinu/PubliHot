@@ -11,10 +11,11 @@
     <div id="container">
 			<div id="ph_header">
 				<div id="header_register">
-				  Usuario: xxxxxxx</br>
-				  Passwd: xxxxxxxx</br>
-				  Remember password</br>
-				  OK   Cancel
+				<%= form_tag("/") do %>
+				  <%= label_tag :user, "User: " %><%= text_field_tag :user, nil, :size => 18 %></br>
+				  <%= label_tag :password, "Password: " %><%= password_field_tag :password, nil, :size => 18 %></br>
+				  Remember password <%= submit_tag "Login", :class => "button" %>
+				<% end %>
 				</div>
 				<p>PubliHot</p>
 			</div>
