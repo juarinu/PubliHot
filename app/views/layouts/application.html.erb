@@ -24,7 +24,7 @@
 	        <%= content_tag :div, msg, :id => "flash_#{name}" %>
 	      <% end %>
 	      <div id="body_left">
-	        Panel de la izquierda
+	        <%= collection_select :province, :province_id, Province.all, :id, :name, :prompt => true,  %>
 	      </div>
 	      <div id="body_right">
 				  Panel de la derecha

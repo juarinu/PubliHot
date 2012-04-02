@@ -7,7 +7,9 @@ $advert_width: ($container_width - $left_width - $right_width - 40) / 2;
 	#body_left {
 		width: $left_width;
 		float: left;
-		border: solid 1px #666;
+		select {
+			font-size: 10px;
+		}
 	}
 	
 	#body_right {
