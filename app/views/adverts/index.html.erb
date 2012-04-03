@@ -2,6 +2,7 @@
 
 <% for advert in @adverts %>
 <div class="advert">
+	<%= image_tag (advert.category_id % 2 == 1 ? "default_female.jpg" : "default_male.jpg"), :size => "100x100" %>
 	<%= advert.title %><br/>
 	<%= advert.description %>
 </div>
