@@ -24,6 +24,7 @@
 	        <%= content_tag :div, msg, :id => "flash_#{name}" %>
 	      <% end %>
 	      <div id="body_left">
+					Province: </br>
 	        <%= collection_select :province, :province_id, Province.all, :id, :name, :prompt => true,  %>
 	      </div>
 	      <div id="body_right">
