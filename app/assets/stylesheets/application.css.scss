@@ -1,6 +1,6 @@
 @import 'bourbon';
 
-$body_bg: #F1F1F1;
+$body_bg: #F8D2A3;
 $a: #0000FF;
 
 html, body {
@@ -11,6 +11,9 @@ html, body {
 
 body {
 	background-color: $body_bg;
+	background-repeat: no-repeat;
+	@include background-image(url("fondo_publihot.png"));
+	
 	a {
 		color: $a;
 		img {

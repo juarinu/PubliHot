@@ -1,12 +1,18 @@
 $left_width: 150px;
 $right_width: 150px;
-$advert_width: ($container_width - $left_width - $right_width - 80) / 2;
+$body_center_bg_color: $header_bg_color;
+$adverts_per_line: 3;
+$advert_padding: 10px;
+$advert_width: ($container_width - $left_width - $right_width - (10 + $adverts_per_line * $advert_padding * 2 + $adverts_per_line * 20)) / $adverts_per_line;
+$advert_height: 400px;
+$advert_border_color: #E3AC9B;
 
 #ph_body {
 	
 	#body_left {
 		width: $left_width;
 		float: left;
+		padding: 5px;
 		select {
 			font-size: 10px;
 		}
@@ -15,24 +21,24 @@ $advert_width: ($container_width - $left_width - $right_width - 80) / 2;
 	#body_right {
 		width: $right_width;
 		float: right;
-		border: solid 1px #666;
+		padding: 5px;
 	}
 	
 	#body_center {
-		margin: 0 $right_width 0 $left_width;
-		padding: 10px;
-		padding-top: 0;
+		padding: 0 $right_width+10 0 $left_width+10;
+		background-color: $body_center_bg_color;
 		
 		.advert {
 			display: inline-block;
 			width: $advert_width;
-			height: 150px;
-			background:#fefabc;
+			height: $advert_height;
 			margin: 5px;
-			padding:5px;
-			@include box-shadow(2px 2px 2px 2px #555);
+			padding:10px;
+			border: solid 1px $advert_border_color;
 			
 			img {
+				width: $advert_width;
+				height: $advert_width ;
 				float: left;
 				margin: 0 5px 5px 0;
 				@include border-radius(4px)
