@@ -11,13 +11,13 @@ $box_shadow_color: #444;
 	width: $container_width;
 	height: 100%;
 	margin: 0 auto;
-	background-color: $container_bg;
 	
 	#ph_header {
+		margin-top: 30px;
 		height: $header_height;
 		@include box-shadow(0 10px 6px -6px $box_shadow_color);
-		@include border-bottom-radius(5px);
-		@include background-image(url("flames.png"));
+		@include border-radius(5px);
+		background-color: rgba(162, 67, 34, 0.5);
 		color: white;
 		
 		img {
