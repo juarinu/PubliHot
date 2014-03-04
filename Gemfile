@@ -19,6 +19,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'minitest'
 end
 
 group :development do
